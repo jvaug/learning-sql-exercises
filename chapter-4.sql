@@ -6,7 +6,7 @@
 	RANGE, BETWEEN
 	SUBQUERIES
 	MATCHING
-
+*/
 /* Construct a query that finds all actors whose last names begin with P and are 4 letters long */
 
 SELECT first_name, last_name
