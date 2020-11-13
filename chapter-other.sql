@@ -36,7 +36,7 @@ END //
 
 DELIMITER ;
 
-CALL GetFilmsByActorLN('STREEP')
+CALL GetFilmsByActorLN('STREEP');
 
 /* Create a store procedure that uses IN and OUT */
 
@@ -56,7 +56,7 @@ END //
 DELIMITER ;
 
 CALL GetRentalsByCID(592,@total_rentals);
-SELECT @total_rentals
+SELECT @total_rentals;
 SET @total_rentals = NULL;
 
 /* Output a query to a .csv file */
@@ -65,5 +65,5 @@ SELECT * FROM payment
 INTO OUTFILE 'tmp/payment.csv'
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
+LINES TERMINATED BY '\n';
 
